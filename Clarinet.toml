@@ -1,0 +1,13 @@
+[project]
+name = "boocoin"
+authors = []
+description = "SIP-010 compatible fungible token: BooCoin (BOO)"
+telemetry = true
+
+[contracts.sip010-ft-trait]
+path = "contracts/sip010-ft-trait.clar"
+depends_on = []
+
+[contracts.boocoin]
+path = "contracts/boocoin.clar"
+depends_on = ["sip010-ft-trait"]
